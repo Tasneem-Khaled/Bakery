@@ -1,0 +1,502 @@
+/* global styles */
+body {
+    margin: 0px;
+    font-family: "Alegreya", serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: #303030;
+    line-height: 44px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+ul {
+    font-size: 17px;
+    color: #686868;
+    line-height: 32px;
+    list-style: none;
+    padding: 0px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* nav */
+.nav {
+    padding: 5px 0px 10px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    box-shadow: 4px 2px 4px 3px rgb(17 17 17 / 2%);
+}
+
+.nav .nav-logo {
+    width: 30%;
+    float: left;
+    text-align: start;
+}
+
+.nav .nav-list {
+    width: 70%;
+    float: right;
+}
+
+.nav .nav-logo img {
+    width: 170px;
+    margin-left: 150px;
+}
+
+.nav .nav-ul {
+    padding-top: 15px;
+    margin: 0px;
+    margin-left: 150px;
+}
+
+.nav .nav-ul a {
+    color: #969693;
+    text-decoration: none;
+}
+
+.nav .nav-ul a span {
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.nav .nav-ul li {
+    display: inline;
+    margin-inline: 15px;
+
+}
+
+.nav .nav-ul li#choice {
+    border-top: 5px solid #8E7754;
+    padding-top: 23px;
+}
+
+.nav .nav-ul li#choice a {
+    color: #333;
+}
+
+.nav .nav-ul li a:hover {
+    color: #333;
+}
+
+/* small box */
+.small-box {
+    position: fixed;
+    width: 50px;
+    height: 120px;
+    right: -2px;
+    top: 250px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 5px 8px 3px rgba(17, 17, 17, 0.1);
+    border-radius: 5px;
+}
+
+.small-box .gear {
+    background-image: url(../images/small-box.png);
+    width: 90%;
+    height: 47px;
+    background-position: 20% 0%;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+}
+
+.small-box .cart {
+    background-image: url(../images/small-box.png);
+    width: 90%;
+    height: 49px;
+    background-position: 30% 80%;
+    background-repeat: no-repeat;
+    margin-left: 2px;
+}
+
+.small-box dd {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 55px;
+    color: #686868;
+    width: 120px;
+    padding: 10px 5px;
+    font-weight: 500;
+}
+
+.small-box .description1 {
+    position: absolute;
+    bottom: 60px;
+}
+
+.small-box .description2 {
+    position: absolute;
+    bottom: 5px;
+}
+
+dt:hover+dd {
+    display: block;
+}
+
+
+/* home section */
+.home {
+    height: 100vh;
+    background-image: url(../images/HomeBG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home .home-text {
+    margin-top: 220px;
+    margin-inline: auto;
+}
+
+.home .home-text h2 {
+    color: white;
+    line-height: 91px;
+    font-size: 76px;
+    margin: 0px;
+}
+
+.home .home-text span {
+    color: white;
+    line-height: 41px;
+    font-size: 22px;
+}
+
+.home .home-text p {
+    color: white;
+    line-height: 45px;
+    font-size: 24px;
+}
+
+.home .home-text #LRN {
+    background-color: #8E7754;
+    color: white;
+    padding: 15px 28px;
+    margin-right: 10px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    transition: all 0.2s ease;
+}
+
+.home .home-text #CNTCT {
+    background-color: transparent;
+    color: white;
+    padding: 15px 28px;
+    margin-right: 10px;
+    border: 1.6px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    transition: all 0.2s ease;
+}
+
+.home .home-text #CNTCT:hover,
+.home .home-text #LRN:hover {
+    background-color: white;
+    color: black;
+}
+
+/* who we are? section */
+.WhoWeAre {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    padding: 90px 0px 110px;
+    overflow: hidden;
+}
+
+.WhoWeAre .who-img {
+    width: 50%;
+    display: inline-block;
+}
+
+.WhoWeAre .who-img #Wimg {
+    width: 87%;
+}
+
+.WhoWeAre .who-text {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: start;
+    padding: 27px 15px;
+}
+
+.WhoWeAre .Who-list {
+    padding-bottom: 15px;
+    text-align: start;
+}
+
+.WhoWeAre .Who-list .img-list {
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid #E0E0E0;
+    margin-top: 17px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+/* our location section */
+.OURloc-section {
+    background-color: #F8F8F8;
+}
+
+.ourLocation {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 90px 0px 110px 27px;
+}
+
+.ourLocation .ourLoc-text {
+    width: 45%;
+    text-align: start;
+    display: inline-block;
+    vertical-align: top;
+    padding: 27px 15px;
+    margin-top: 35px;
+    margin-left: 13px;
+}
+
+.ourLocation .ourLoc-img {
+    width: 50%;
+    display: inline-block;
+}
+
+.ourLocation .ourLoc-img #Limg {
+    width: 87%;
+}
+
+/* our baking section */
+.ourBaking {
+    text-align: center;
+    width: 80%;
+    padding: 60px 0px 110px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#ourB-header {
+    line-height: 41px;
+}
+
+.card {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-right: 3px;
+}
+
+img {
+    width: 90%;
+}
+
+h3 {
+    font-size: 22px;
+    color: #303030;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.poB {
+    width: 75%;
+    margin: auto;
+}
+
+/* contact info section */
+.Contact-section {
+    background-color: #F8F8F8;
+}
+
+.ContactInfo {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    /* padding: 90px 0px 30px; */
+    padding: 90px 0px 30px 27px;
+    overflow: hidden;
+}
+
+.ContactInfo .contact-text {
+    width: 45%;
+    text-align: start;
+    float: left;
+    padding: 17px 15px 95px;
+    margin-left: 19px;
+}
+
+.contact-list .img-list {
+    background-color: #8E7754;
+    width: 36px;
+    height: 36px;
+    margin-top: 27px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+.ContactInfo .Contact-map {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.ContactInfo .Contact-map #gmap {
+    width: 74%;
+    height: 77%;
+}
+
+/* foot section */
+.foot {
+    background-color: #403D38;
+    padding: 60px 0px 30px;
+}
+
+.foot .foot-lists {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-left: 10px;
+
+}
+
+.foot .foot-lists div {
+    width: calc(25% - 50px);
+    float: left;
+    margin-right: 50px;
+}
+
+.foot .foot-lists .about-us p {
+    margin-top: 10px;
+}
+
+.foot p {
+    color: #969693;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.foot li span {
+    color: #969693;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.foot .img-list {
+    width: 28px;
+    height: 28px;
+    margin-top: 27px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.foot li {
+    color: #969693;
+    border-bottom: 1.5px solid #4A4742;
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    margin-top: -19.7px;
+}
+
+.foot .last-li {
+    border: 0px;
+}
+
+.foot h3 {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.details-list {
+    background-image: url(../images/contact-details-map.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.img-dlist {
+    width: 42px;
+    height: 42px;
+    margin-top: 17px;
+    /* margin-right: 5px; */
+    vertical-align: bottom;
+}
+
+/* info */
+.foot-info {
+    background-color: #353330;
+    overflow: hidden;
+    text-align: center;
+}
+
+.foot-info .info {
+    margin: 50px auto;
+}
+
+.logoF {
+    margin: 10px 0px 25px;
+
+}
+
+.logoF .logo {
+    width: 350PX;
+
+}
+
+.cpyRights span {
+    color: #777777;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.socialMedia .icons {
+    background-color: #484540;
+    width: 41px;
+    height: 41px;
+    margin-top: 17px;
+    margin-right: 3px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.socialMedia .icons.facebook:hover {
+    background-color: #3B5998;
+}
+
+.socialMedia .icons.google:hover {
+    background-color: #DD4B39;
+}
+
+.socialMedia .icons.linkedin:hover {
+    background-color: #007BB5;
+}
+
+.socialMedia .icons.twitter:hover {
+    background-color: #00ACED;
+}
